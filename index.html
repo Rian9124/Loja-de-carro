@@ -5,40 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>loja_de_carro</title>
-    <link rel="shortcut icon" href="Imagens/logo carro e moto" type="logo carro e moto">
-    <script>
-        function redirecionar() {
-  if (document.getElementById('opção1').checked) {
-    window.location.href = 'carro_index.html';
+<script>
+    function redirecionar() {
+    if (document.getElementById('opção1').checked) {
+    window.location.href = 'carroAM_index.html';
     return;
-  }
-  if (document.getElementById('opção2').checked) {
-    window.location.href = 'motos_index.html';
+    }
+    if (document.getElementById('opção2').checked) {
+    window.location.href = 'carroAS_index.html';
     return;
-}
+    }
+    if (document.getElementById('opção3').checked) {
+    window.location.href = 'carroEU_index.html';
+    return;
+    }
    else {
     alert('Por favor, selecione uma caixa para continuar.');
-  }
-}
-    </script>
+    }
+    }
+</script>
 </head>
 <body>
+    
     <div class="titulo">
-        <img src="Imagens/logo carro e moto" alt="logo de carro e moto">
+        <img id="img" src="Imagens/carro-esportivo-dirigindo-na-estrada-de-asfalto-a-noite-ia-generativa_300px.jpg" >
         <h1>
-            O melhor preço no seu bolso
+            Ache o melhor carro para você aqui
         </h1>
-        <div class="caixa">
+    <div class="caixa">
         <form>
-            <label id="t2">O que você deseja ?</label><br>
-            <div class="checkbox">
+            <label id="t2">Escolha o país que deseja pesquisa ?</label><br>
+            <div class="opções">
             <input type="checkbox" id="opção1"nome="opção" value="opção1">
-            <label>carro</label>
-            <input type="checkbox" id="opção2" nome="opção" value="opção2">
-            <label>moto</label>
+            <label>Americano</label>
+            <input type="checkbox" id="opção2"nome="opção" value="opção2">
+            <label>Asiatico</label>
+            <input type="checkbox" id="opção3" nome="opção" value="opção3">
+            <label>Europeu</label>
             </div>
         </form>
-        </div>
-        <button id="botao" onclick="redirecionar()">Pesquisa</button>
+    </div>
+            <button id="botao" onclick="redirecionar()">Pesquisa</button>
 </body>
 </html>

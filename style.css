@@ -5,10 +5,15 @@ box-sizing: border-box;
 text-decoration: none;
 }
 body{
+    align-items: center;
     font-size: 100%;
-    background-color: #004986;
+    background: linear-gradient(to left, #020202ff, #0863FF)
 }
+#img{
+    margin-bottom: 15px;
+    }
 .titulo{
+    margin-top: 15px;
     text-shadow: -1px -1px 0 #000,  
     1px -1px 0 #000,
    -1px  1px 0 #000,
@@ -18,48 +23,56 @@ body{
     align-items: center;
     flex-direction: column;
     font-family: "Calistoga", serif;
-    font-weight: 400;
-    font-style: normal;
+    font-size: 10px;
 }
 #t2{
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 13px;
     color: #ffffff;
     display:flex;
     align-items: center;
     flex-direction: column;
-    border-radius: 30px;
 }
 .caixa{
+    border-radius: 15px;
     display: flex;
     justify-content: center;
     background-color: #1C1E1F;
     margin-top: 30px;
-    border-radius: 45px;
     color: #ffffff;
-    width: 250px;
-    height: 110px;
+    width: 300px;
+    height: 100px;
 }
-.checkbox{
-    font-size: 30px;
+.opções{
     display: flex;
-    justify-content: space-evenly;
-    align-items: baseline;
+    font-size: 20px;
+    margin-top: 5px;
+    gap: 5px;
+    gap: 5px 5px;
+    row-gap: 5px;
+    column-gap: 5px;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
 }
 #botao{
-text-shadow:  -1px 0 #000,  
+    margin-top: 15px;
+    text-shadow: -1px -1px 0 #000,  
     1px -1px 0 #000,
    -1px  1px 0 #000,
     1px  1px 0 #000;
-    margin-top: 25px;
+    gap: 5px;
+    gap: 5px 5px;
+    row-gap: 5px;
+    column-gap: 10px;
     height: 60px;
-    width: 150px;
+    width:150px;
     font-size: 20px;
     background-color: #00e1ff;
     border-radius: 20px;
-    box-shadow: 15px#000;
     border:none;
     color: white;
+    margin-bottom: 20px';
 }
 #botao:hover{
     background-color: #008697;
