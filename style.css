@@ -1,0 +1,66 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+}
+body{
+    font-size: 100%;
+    background-color: #004986;
+}
+.titulo{
+    text-shadow: -1px -1px 0 #000,  
+    1px -1px 0 #000,
+   -1px  1px 0 #000,
+    1px  1px 0 #000;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Calistoga", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#t2{
+    font-size: 25px;
+    margin-top: 13px;
+    color: #ffffff;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+}
+.caixa{
+    display: flex;
+    justify-content: center;
+    background-color: #1C1E1F;
+    margin-top: 30px;
+    border-radius: 45px;
+    color: #ffffff;
+    width: 250px;
+    height: 110px;
+}
+.checkbox{
+    font-size: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+#botao{
+text-shadow:  -1px 0 #000,  
+    1px -1px 0 #000,
+   -1px  1px 0 #000,
+    1px  1px 0 #000;
+    margin-top: 25px;
+    height: 60px;
+    width: 150px;
+    font-size: 20px;
+    background-color: #00e1ff;
+    border-radius: 20px;
+    box-shadow: 15px#000;
+    border:none;
+    color: white;
+}
+#botao:hover{
+    background-color: #008697;
+}
