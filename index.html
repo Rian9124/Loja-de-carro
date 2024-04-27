@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>loja_de_carro</title>
+    <link rel="shortcut icon" href="Imagens/logo carro e moto" type="logo carro e moto">
+    <script>
+        function redirecionar() {
+  if (document.getElementById('opção1').checked) {
+    window.location.href = 'carro_index.html';
+    return;
+  }
+  if (document.getElementById('opção2').checked) {
+    window.location.href = 'motos_index.html';
+    return;
+}
+   else {
+    alert('Por favor, selecione uma caixa para continuar.');
+  }
+}
+    </script>
 </head>
 <body>
     <div class="titulo">
@@ -16,13 +32,13 @@
         <form>
             <label id="t2">O que você deseja ?</label><br>
             <div class="checkbox">
-            <input type="checkbox" nome="opção" value="opção1">
+            <input type="checkbox" id="opção1"nome="opção" value="opção1">
             <label>carro</label>
-            <input type="checkbox" nome="opção" value="opção2">
+            <input type="checkbox" id="opção2" nome="opção" value="opção2">
             <label>moto</label>
             </div>
         </form>
         </div>
-            <button id="botao">Pesquisa</button>
+        <button id="botao" onclick="redirecionar()">Pesquisa</button>
 </body>
 </html>
